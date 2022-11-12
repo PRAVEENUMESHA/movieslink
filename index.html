@@ -5,77 +5,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies|link</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-
     <header>
-        <div class="log"><img src="./photo/movilogo.png" alt=""></div>
-        <!-- <div class="handbarger"></div> -->
-        <nav class="nav-bar">
-            <!-- <div class="inner-nav"> -->
-            <ul>
+        <div class="logo"><img src="./photo/movilogo.png" alt=""></div>
 
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="#" class="active">about </a></li>
-                <li><a href="#" class="active">feedback</a></li>
-                <li><a href="#" class="active">help</a></li>
-                <!-- </div> -->
+                <li><a href="#">contact</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">help as</a></li>
+                <li><a href="#">Home</a></li>
             </ul>
         </nav>
-        </div>
     </header>
-        <marquee behavior="alternativ" direction="left">
-            <h1>welcom</h1>
-        </marquee>
-        <div class="main-body">
+    <marquee behavior="alternative" direction="left"><h3><----this wedsite will gives  you are favorite movies----></h3></marquee>
 
-            <a href="#"><img src="./photo/filemphoto.png" alt="">
+    <div class="middel-body">
+
+        <div class="middel-item"><a href="">
+                <img src="./photo/filemphoto.png" alt="">
                 <h2>welcome</h2>
-            </a>
-            <a href="#"><img src="./photo/filemphoto.png" alt="">
+            </a></div>
+        <div class="middel-item"><a href="">
+                <img src="./photo/filemphoto.png" alt="">
                 <h2>welcome</h2>
-            </a>
-            <a href="#"><img src="./photo/filemphoto.png" alt="">
+            </a></div>
+        <div class="middel-item"><a href="">
+                <img src="./photo/filemphoto.png" alt="">
                 <h2>welcome</h2>
-            </a>
-            <a href="#"><img src="./photo/filemphoto.png" alt="">
+            </a></div>
+        <div class="middel-item"><a href="">
+                <img src="./photo/filemphoto.png" alt="">
                 <h2>welcome</h2>
-            </a>
-            <a href="#"><img src="./photo/filemphoto.png" alt="">
+            </a></div>
+        <div class="middel-item"><a href="">
+                <img src="./photo/filemphoto.png" alt="">
                 <h2>welcome</h2>
-            </a>
-            <a href="#"><img src="./photo/filemphoto.png" alt="">
+            </a></div>
+        <div class="middel-item"><a href="">
+                <img src="./photo/filemphoto.png" alt="">
                 <h2>welcome</h2>
-            </a>
-            <a href="#"><img src="./photo/filemphoto.png" alt="">
-                <h2>welcome</h2>
-            </a>
-            <a href="#"><img src="./photo/filemphoto.png" alt="">
-                <h2>welcome</h2>
-            </a>
-            <a href="#"><img src="./photo/filemphoto.png" alt="">
-                <h2>welcome</h2>
-            </a>
+            </a></div>
+
+    </div>
+
+    <footer>
+        <div class="left">
+            <a href=""><img src="./photo/instagramsmall.png" alt=""></a>
+            <a href=""><img src="./photo/facebooksmall.png" alt=""></a>
+            <a href=""><img src="./photo/twitter.png" alt=""></a>
         </div>
-    
+        <div class="right">
+            <div class="h2">
+                <h2 class="footer-text">name: praveen kumar u</h2>
+                <h2 class="footer-text">e-mail:1ms20ee404@gmail.com</h2>
+            </div>
 
-        <footer>
-            <div class="left">
-                <a href="#"><img src="./photo/instagramsmall.png" alt=""></a>
-                <a href="#"><img src="./photo/instagramsmall.png" alt=""></a>
-                <a href="#"><img src="./photo/instagramsmall.png" alt=""></a>
-            </div>
-            <div class="middle"><img src="./photo/praveen.png" alt=""></div>
-            <div class="right">
-                <h2>name: praveen kumar u.</h2>
-                <h2>e-mail:1ms20ee404@gmail.com</h2>
-                <h2>place: bengaluru</h2>
-            </div>
-        </footer>
+        </div>
+    </footer>
 </body>
+<script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function () {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
 
 </html>
