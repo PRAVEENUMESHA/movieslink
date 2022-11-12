@@ -43,6 +43,7 @@ header {
     border-radius: 50px;
     text-transform: capitalize;
     font-weight: bold;
+    font-family: 'Baloo Bhai';
     transition: .3s;
     margin: 0 5px;
 }
@@ -121,144 +122,107 @@ header {
 }
 
 /* innner body start form here */
+marquee h3 {
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: capitalize;
+    /* font-family: 'Baloo Bhai'; */
+    font-family: 'Zen Antique', serif;
+}
 
 marquee {
-    /* margin-top: 1px;
-    margin-bottom: 1px; */
-    background: rgb(212, 118, 118);
-    height: fit-content;
-    padding: 12px auto;
-    font-size: 23px;
-    border-radius: 5px;
-}
-marquee h3
- {
-    text-transform: capitalize;
-    font-weight: bold;
- }
-
-.middel-body .middel-item {
-    border: 2px solid rgb(246, 252, 246);
-    border-radius: 18px;
-}
-.middel-item:hover
-{
-    transform: scale(1.07);
-}
-
-.middel-body {
-    margin: 0%;
-    display: grid;
-    grid-gap: 16px;
-    padding: 16px;
-    grid-template-columns: repeat(3, 1fr);
+    box-sizing: border-box;
+    background-color: rgb(230, 124, 124);
     border-radius: 12px;
-    background: gray;
-    /* border: 2px solid red; */
-}
-@media only screen and (max-width:999px)
-{
-    .middel-body
-    {
-
-        grid-template-columns: repeat(2, 1fr);
-    }
-    marquee
-    {
-        /* color: red; */
-    }
-}
-@media only screen and (max-width:690px)
-{
-    .middel-body
-    {
-
-        grid-template-columns: repeat(1, 1fr);
-    }
-    marquee
-    {
-        color: red;
-    }
+    height: fit-content;
+    /* border: 2px solid rgb(35, 241, 69); */
+    margin-bottom: 0%;
 }
 
-
-.middel-item a
-{
-    
-    display: block;
-    text-align: center;
-    padding: 8px;
-}
-.middel-item a h2
-{
-    display: block;
-
+/* box resizing and main item star form here */
+.box {
+    /* border: 2px solid red;    */
+    border-radius: 12px;
+    background-color: gray;
+    grid-gap: 17px;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
 }
 
+.inside-box {
+    border: 2px solid green;
+    padding: 12px;
+    border-radius: 12px;
+}
 
-/* footer :start header */
-footer
-{
-    background-color: #11101b;
-}
-.left
-{
-    padding-left: 34px;
-    display: flex;
-    align-items: center;
-}
-.left a img 
-{
-    padding: 0 18px;
-}
-.left a img:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: 0.2s;;
-} 
-.right 
-{
-    /* border: 2px solid white; */
-    margin: auto;
-}
-.right .h2
-{
-font-size: 20PX;
-/* text-align: center; */
-/* border: 2px solid red; */
-text-decoration: none;
-color: rgb(253, 251, 251);
-text-transform: capitalize;
-font-weight: bold;
-}
-.right
-{
+.inside-box a {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
-footer
-{
-    display: grid;
-    grid-gap: 16px;
-    padding: 8px 16px;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: #11101b;
+.inside-box a h2 {
+    display: block;
+    /* border: 2px solid red; */
+    margin: auto;
 }
-.footer-text{
-    font-size: 16px;
-}
-@media only screen and (max-width:800px)
-{
-    footer
-    {
-        background-color: #15cc43;
-        
-        grid-template-columns: repeat(1, 1fr);
+
+@media only screen and (max-width:660px) {
+    .box {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 3fr));
     }
-    
+}
+@media only screen and (max-width:460px) 
+{
+    .box
+    {
+        /* background-color: green; */
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
    
 }
-
+.inside-box:hover
+{
+    transform: scale(1.05);
+}
+/* footer :start form here */
+footer
+{
+    background-color: black;
+}
+.praveen img
+{
+    padding: 7px 0;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    /* border: 2px solid red; */
+}
+.social-media
+{
+    display: flex;
+    justify-content: space-between;
+}
+.left a img
+{
+    padding: 0 8px;
+   
+}
+.left a img:hover
+{
+    padding: 0 12px;
+    transform: scale(1.1);
+}
+p
+{
+    padding: 0 12px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+footer
+{
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
